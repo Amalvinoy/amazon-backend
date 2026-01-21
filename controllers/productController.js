@@ -1,4 +1,4 @@
-const Products = require('../models/products');
+const Products = require('../models/Products');
 
 // Add a new product with jwt
 exports.addProduct = async (req, res) => {
