@@ -5,11 +5,10 @@ const userController = require('../controllers/userController');
 const productController = require('../controllers/productController');
 
 // auth routes
-router.post('/api/register', userController.registerUser);
-router.post('/api/login', userController.loginUser);
+router.post('/api/registerUser', userController.registerUser);
+router.post('/api/loginUser', userController.loginUser);
 
 //product routes
-router.use('/api/products', jwtMiddleware);
 router.post('/api/products', productController.addProduct);
 router.get('/api/products', productController.getAllProducts);
 
